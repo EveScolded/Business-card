@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wizytówka</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css"/>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <h1>Ciao bella!</h1>
-</body>
+  </head>
+  <body>
+    <main class="main">
+      <article class="person">
+        <img class="person__picture" src="avatar.png" />
+        <header class="person__info">
+          <h1 class="person__name"> Ewelina Rugała</h1>
+          <p class="person__position">Młodszy analityk danych</p>
+        </header>
+        <p class="person__description person__description--with-margin">Poszukiwaczka zawodowej drogi w meandrach znaczników, stylów i funckji. 
+            Fanka <strong class="specjal">cieciorki</strong> pod każdą postacią, amatorka <strong class="specjal">fotografii</strong>, zakręcona na punkcie <strong class="specjal">domowej dżungli</strong>. 
+            Lubi się uczyć nowych rzeczy, albo jest samobiczującą się masochistką. </p>
+        <p class="person__description">W sieci: <a class="person__link" href="#" >Facebook</a>, <a class="person__link" href="#">GitHub</a>.</p>
+       </article>
+    </main>
+  </body>
 </html>
