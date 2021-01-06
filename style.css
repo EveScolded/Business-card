@@ -8,16 +8,18 @@ html {
 }
 
 body {
-  background-color: #2c2141;
+  background-image: url(plant_background2.jpg);
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .main {
-  background-color: #f8f8f8;
+  background-color: #ffffff;
+  box-shadow: 2px 2px #264653;
   border-radius: 16px;
   width: 624px;
   margin: 16px;
@@ -25,7 +27,16 @@ body {
 }
 
 .person {
+    display: flex;
+    align-items: center;
+}
 
+.person__picture {
+    margin-right: 32px;
+    border: solid 2px #264653;
+    border-radius: 16px;
+    box-shadow: 2px 2px #264653;
+    width: 200px;
 }
 
 .person__info {
@@ -35,13 +46,13 @@ body {
 .person__name {
     font-size: 36px;
     margin: 0;
+    color: #f48c06;
     font-weight: normal;
 }
 
 .person__position {
     font-size: 18px;
     font-style: italic;
-    color: #545454;
     margin:0;
 }
 
@@ -51,16 +62,40 @@ body {
     margin: 0;
 }
 
+.person__contact {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
 .person__description--with-margin {
     margin-bottom: 22px;
 }
 
-.specjal {
-    color: #ED6D05;
+.special {
+    color: #f48c06;
     font-weight: normal;
 }
 
 .person__link {
-    color: #E20613;
-    text-decoration:none;
+    margin: 16px;
+} 
+
+.person__link--GH {
+    width: 35px;
+    height: 35px;
 }
+  
+.person__link--IN {
+    width: 35px;
+    height: 35px;
+}
+  
+.person__link--GH:hover {
+    transform: scale(1.2);
+}
+  
+.person__link--IN:hover {
+    transform: scale(1.2);
+}
+  
